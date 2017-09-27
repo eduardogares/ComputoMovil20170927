@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EdgeView.h"
 
-@interface Home : UIViewController
+
+@interface Home :  UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate >
 
 @property (strong, nonatomic) IBOutlet UITableView *tblMain;
 - (IBAction)btnAddPressed:(id)sender;
+
+
 
 @end
 
